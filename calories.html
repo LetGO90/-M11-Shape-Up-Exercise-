@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shape Up! | Calorie Counter</title>
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<header class="site-header">
+			<div class="brand-area">
+				<img src= "images/shape_up_logo.png" alt="Shape Up Logo">
+				<div class="brand-text">
+					<div class="site-title">SHAPE UP!</div>
+					<p class="tagline">Find the best fit for you</p>
+				</div>
+			</div>
+		</header>
+
+		<nav class="main-nav" aria-label="Main Navigation">
+			<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+			<label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+			<ul class="nav-list">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="#">Strength Training</a></li>
+				<li><a href="#">Cardio Exercises</a></li>
+				<li class="has-dropdown">
+					<a href="#">Stress Relief &#9662;</a>
+					<ul class="dropdown">
+						<li><a href="#">Breathing Exercises</a></li>
+						<li><a href="#">Guided Meditation</a></li>
+					</ul>
+				</li>
+				<li class="nav-pill-item">
+					<a href="#" class="nav-pill">Healthy Diets &#9662;</a>
+					<ul class="dropdown">
+						<li><a href="calories.html">Calorie Counter</a></li>
+						<li><a href="#">Balanced Macros</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="content-container">
+			<main class="main-content">
+				<h1>Calorie Counter</h1>
+				<table>
+					<thead>
+						<tr>
+							<th class="col-category">Category</th>
+							<th class="col-food">Food</th>
+							<th class="col-serving">Serving size</th>
+							<th class="col-calories">Calories</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Beef -->
+						<tr class="category-row">
+							<td class="category" rowspan="3">Beef</td>
+							<td class="food">Frankfurter, Beef</td>
+							<td class="serving">1 each</td>
+							<td class="calories" data-cal="184">184</td>
+						</tr>
+						<tr>
+							<td class="food">Ground Beef</td>
+							<td class="serving">4 oz</td>
+							<td class="calories" data-cal="264">264</td>
+						</tr>
+						<tr>
+							<td class="food">T-Bone Steak</td>
+							<td class="serving">8 ounces</td>
+							<td class="calories" data-cal="402">402</td>
+						</tr>
+
+						<!-- Bread -->
+						<tr class="category-row">
+							<td class="category" rowspan="3">Bread</td>
+							<td class="food">Bagel, plain</td>
+							<td class="serving">1 bagel</td>
+							<td class="calories" data-cal="360">360</td>
+						</tr>
+						<tr>
+							<td class="food">Bread, sliced</td>
+							<td class="serving">1 slice</td>
+							<td class="calories" data-cal="60 to 80">60 to 80</td>
+						</tr>
+						<tr>
+							<td class="food">English Muffin</td>
+							<td class="serving">1</td>
+							<td class="calories" data-cal="135">135</td>
+						</tr>
+
+						<!-- Cereal -->
+						<tr class="category-row">
+							<td class="category" rowspan="3">Cereal</td>
+							<td class="food">Cheerios</td>
+							<td class="serving">1 cup</td>
+							<td class="calories" data-cal="110">110</td>
+						</tr>
+						<tr>
+							<td class="food">Corn Flakes</td>
+							<td class="serving">1 cup</td>
+							<td class="calories" data-cal="100">100</td>
+						</tr>
+						<tr>
+							<td class="food">Oatmeal, quick</td>
+							<td class="serving">1 cup cooked</td>
+							<td class="calories" data-cal="145">145</td>
+						</tr>
+
+						<!-- Cheese -->
+						<tr class="category-row">
+							<td class="category" rowspan="4">Cheese</td>
+							<td class="food">American</td>
+							<td class="serving">1 ounce</td>
+							<td class="calories" data-cal="106">106</td>
+						</tr>
+						<tr>
+							<td class="food">Swiss</td>
+							<td class="serving">1 ounce</td>
+							<td class="calories" data-cal="100">100</td>
+						</tr>
+						<tr>
+							<td class="food">Cheddar</td>
+							<td class="serving">1 ounce</td>
+							<td class="calories" data-cal="114">114</td>
+						</tr>
+						<tr>
+							<td class="food">Cottage Cheese, regular</td>
+							<td class="serving">1/2 cup</td>
+							<td class="calories" data-cal="117">117</td>
+						</tr>
+
+						<!-- Fruit -->
+						<tr class="category-row">
+							<td class="category" rowspan="2">Fruit</td>
+							<td class="food">Apple</td>
+							<td class="serving">1 medium</td>
+							<td class="calories" data-cal="80">80</td>
+						</tr>
+						<tr>
+							<td class="food">Banana</td>
+							<td class="serving">1</td>
+							<td class="calories" data-cal="105">105</td>
+						</tr>
+					</tbody>
+				</table>
+			</main>
+
+			<aside class="sidebar" aria-label="Additional resources">
+				<h2>Additional resources</h2>
+				<ul>
+					<li>
+						<img src="images/run-icon.png" alt="Running" width=25 height=25>
+						<a href="#">Physical activity and health</a>
+					</li>
+					<li>
+						<img src="images/stretch-icon.png" alt="Stretch" width=25 height=25>
+						<a href="#">Stretching exercises</a>
+					</li>
+					<li>
+						<img src="images/strength-icon.png" alt="Strength" width=25 height=25>
+						<a href="#">Strength training</a>
+					</li>
+					<li>
+						<img src="images/cardio-icon.png" alt="Cardio" width=25 height=25>
+						<a href="#">Cardiovascular training</a>
+					</li>
+					<li>
+						<img src="images/yoga-icon.png" alt="Yoga" width=25 height=25>
+						<a href="#">Yoga workout</a>
+					</li>
+				</ul>
+			</aside>
+		</div>
+
+		<footer class="site-footer">
+			<p>&copy; Shape Up!</p>
+		</footer>
+	</div>
+</body>
+</html>
